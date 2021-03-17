@@ -1,15 +1,15 @@
 body {
-    background: #fae6e7;
+    background: #d5c5db;
 
     font-family: 'Fira Sans', sans-serif;
 }
 
 .jumbotron {
-    background: #f0a3b5;
+    background: url("https://i.imgur.com/615Wuw9.jpg");
 }
 
 h2 {
-    color: #bf171d;
+    color: #b54cdb;
 }
 
 button, a.btn {
