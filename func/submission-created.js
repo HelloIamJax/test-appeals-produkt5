@@ -33,23 +33,23 @@ exports.handler = async function (event, context) {
         const userInfo = decodeJwt(payload.token);
         const message = {
             embed: {
-                title: "New appeal submitted!",
+                title: "Nueva apelación de baneo hecha",
                 timestamp: new Date().toISOString(),
                 fields: [
                     {
-                        name: "Submitter",
+                        name: "Usuario",
                         value: `<@${userInfo.id}> (${userInfo.username}#${userInfo.discriminator})`
                     },
                     {
-                        name: "Why were you banned?",
+                        name: "¿Por que fuiste baneado?",
                         value: payload.banReason.slice(0, MAX_EMBED_FIELD_CHARS)
                     },
                     {
-                        name: "Why do you feel you should be unbanned?",
+                        name: "¿Por que deberias ser desbaneado?",
                         value: payload.appealText.slice(0, MAX_EMBED_FIELD_CHARS)
                     },
                     {
-                        name: "What will you do to avoid being banned in the future?",
+                        name: "¿Qué harás para evitar ser baneado en un futuro?",
                         value: payload.futureActions.slice(0, MAX_EMBED_FIELD_CHARS)
                     }
                 ]
