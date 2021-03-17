@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: #f58588;
 
     font-family: 'Fira Sans', sans-serif;
 }
@@ -8,7 +8,7 @@ body {
     background: #f0a3b5;
 }
 
-h1 {
+h2 {
     color: #db4172;
 }
 
