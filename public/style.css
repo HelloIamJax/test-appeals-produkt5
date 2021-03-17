@@ -5,7 +5,7 @@ body {
 }
 
 .jumbotron {
-    background: #e5c5eb;
+    background: #dab6f5;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
 
 button, a.btn {
     color: white !important;
-    background-color: #7289da !important;
+    background-color: #9c43e0 !important;
     border: none !important;
     box-shadow: none !important;
 
@@ -23,11 +23,11 @@ button, a.btn {
 }
 
 button:hover, a.btn:hover {
-    background-color: #677bc4 !important;
+    background-color: #b788db !important;
 }
 
 button:active, a.btn:active {
-    background-color: #5b6eae !important;
+    background-color: #9c43e0 !important;
 }
 
 label {
