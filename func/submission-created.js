@@ -57,12 +57,7 @@ exports.handler = async function (event, context) {
         }
 
         if (process.env.GUILD_ID) {
-            const mensaje;
             try {
-                const IDUser = userInfo.id;
-                if (IDUser !== null && mensaje) {
-                    message.delete(1000);
-                }
                 const ban = await getBan(userInfo.id, process.env.GUILD_ID, process.env.DISCORD_BOT_TOKEN);
                 if (ban !== null && ban.reason) {
                     message.embed.footer = {
